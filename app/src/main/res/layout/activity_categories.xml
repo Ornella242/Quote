@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesActivity">
+
+
+
+    <TextView
+        android:id="@+id/ami"
+        android:layout_width="402dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ami"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Amitié"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:clickable="true"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/bonheur"
+        android:layout_width="402dp"
+        android:layout_height="121dp"
+        android:layout_below="@id/ami"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bonheur"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Bonheur"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textcolor="@color/white"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/calme"
+        android:layout_width="402dp"
+        android:layout_height="121dp"
+        android:layout_below="@id/bonheur"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/calme"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Calme"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textcolor="@color/white"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/echec"
+        android:layout_width="402dp"
+        android:layout_height="121dp"
+        android:layout_below="@id/calme"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/echec"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Echec"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textcolor="@color/white"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/souffrance"
+        android:layout_width="402dp"
+        android:layout_height="121dp"
+        android:layout_below="@id/echec"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/souffrance"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Souffrance"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textcolor="@color/white"
+        android:clickable="true"
+        />
+</RelativeLayout>
