@@ -34,7 +34,7 @@ public class QuotesActivity extends AppCompatActivity {
         category = (CategoryModel) getIntent().getSerializableExtra("category");
 
         CategoryService categoryService = new CategoryService(QuotesActivity.this);
-        categoryService.getQuotes(listener, "1");
+        categoryService.getQuotes(listener, category.getId());
     }
 
 

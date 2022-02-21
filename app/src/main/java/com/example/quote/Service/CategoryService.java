@@ -18,6 +18,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public class CategoryService {
@@ -59,9 +60,9 @@ public class CategoryService {
         }
     }
 
-    public void getQuotes(OnFetchDataListener listener, String id) {
+    public void getQuotes(OnFetchDataListener listener, int id) {
         CallCategoryApi callCategoryApi = retrofit.create(CallCategoryApi.class);
-        Call <List<QuoteModel>> call = callCategoryApi.getQuotes();
+        Call <List<QuoteModel>> call = callCategoryApi.getQuotes(id);
 
         try {
             call.enqueue(new Callback<List<QuoteModel>>() {
@@ -90,7 +91,7 @@ public class CategoryService {
         Call<List<CategoryModel>> getCategory();
 
         @Headers("Accept: application/json")
-        @GET("category/1/quotes")
-        Call<List<QuoteModel>> getQuotes();
+        @GET("category/{id}/quotes")
+        Call<List<QuoteModel>> getQuotes(@Path("id") int id);
     }
 }
